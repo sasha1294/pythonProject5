@@ -13,7 +13,7 @@ from oauth_2.src.conf.Alchemy_conf import create_base
 from oauth_2.src.models.user.data.models import Token, User_model, User
 from oauth_2.src.models.user.data.tools import authenticate_user, userCreate, eventCreate
 from oauth_2.src.encrypt.encrypt import create_access_token, get_current_active_user
-from oauth_2.src.conf.Api_conf import template, oauth
+from oauth_2.src.conf.Api_conf import template
 from fastapi.responses import RedirectResponse
 
 router = APIRouter(prefix="/example")
@@ -75,7 +75,7 @@ async def main_page(request: Request):
 
 
 #google
-
+"""
 @router.get("/create_ac")
 async def registration(request: Request):
     try:
@@ -98,7 +98,7 @@ async def auth(request: Request):
         await create_base()
         await userCreate(user_data)
     return RedirectResponse(url="example/user_ac", status_code=303)
-
+"""
 
 #oauth2
 @router.post("/token")

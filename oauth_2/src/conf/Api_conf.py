@@ -6,13 +6,13 @@ from starlette.middleware.sessions import SessionMiddleware
 from starlette.staticfiles import StaticFiles
 from starlette.templating import Jinja2Templates
 
-from oauth_2.env.env import middleware_sicret_key, client_id, clientSecret
+from oauth_2.env.env import middleware_sicret_key
 
 app = FastAPI()
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="http://localhost:8000/Oauth2/token")
 template = Jinja2Templates(directory="templates")
 app.mount("/templates", StaticFiles(directory="templates"), name="templates")
-
+"""
 oauth = OAuth()
 oauth.register(
     name= "google",
@@ -24,7 +24,7 @@ oauth.register(
         "redirect_url": "http://localhost:8000/Oauth2/auth"
     }
 )
-
+"""
 origins = [
     "http://localhost:8000",
 ]
