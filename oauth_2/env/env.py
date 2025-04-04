@@ -3,5 +3,3 @@ ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
 middleware_sicret_key = "puuuuvo"
 
-client_id = "207515006704-ap9f2l43ukp33sr1pedodekfv4h2e6hq.apps.googleusercontent.com"
-clientSecret = "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"
