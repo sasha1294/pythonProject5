@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Registration Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+</head>
+<body class="h-screen flex items-center justify-center bg-gradient-to-r from-pink-300 to-indigo-900">
+    <div class="bg-white w-full max-w-md p-8 rounded-lg shadow-lg flex flex-col justify-between">
+        <div>
+            <div class="flex items-center mb-6">
+                <span class="mr-2 text-3xl">点</span>
+                <span class="text-xl font-bold">Tedian</span>
+            </div>
+            <h1 class="text-3xl font-bold mb-2">Регистрация</h1>
+            <p class="mb-6">
+                Уже есть аккаунт?
+                <a class="text-blue-500" href="#">Войти</a>
+            </p>
+            <form class="flex-grow" action="http://localhost:8000/example/register" method="POST">
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-gray-700" for="name">Имя</label>
+                    <input class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" id="name" name="name" type="text" required/>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-gray-700" for="username">Логин</label>
+                    <input class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" id="username" name="username" type="text" required/>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-gray-700" for="email">Электронная почта</label>
+                    <input class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" id="email" name="email" type="email" required/>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-gray-700" for="phone">Номер телефона</label>
+                    <input class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" id="phone" name="phone" type="tel" required/>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-gray-700" for="password">Пароль</label>
+                    <input class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" id="password" name="password" type="password" required/>
+                </div>
+                <div class="mb-6">
+                    <label class="block text-sm font-medium text-gray-700" for="confirm-password">Повторите пароль</label>
+                    <input class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" id="confirm-password" name="confirm-password" type="password" required/>
+                </div>
+                <button class="w-full py-2 px-4 bg-purple-700 text-white font-semibold rounded-md shadow-md hover:bg-purple-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500" type="submit">
+                    Зарегистрироваться
+                </button>
+            </form>
+        </div>
+        <div>
+            <button class="w-full mt-4 py-2 px-4 bg-white text-black border border-black font-semibold rounded-md shadow-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 flex items-center justify-center" type="button">
+                <i class="fab fa-google mr-2"></i>
+                <a> Войти через Google </a>
+            </button>
+        </div>
+    </div>
+</body>
+</html>

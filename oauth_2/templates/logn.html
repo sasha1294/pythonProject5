@@ -1,0 +1,50 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Login Page
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+ </head>
+ <body class="h-screen flex items-center justify-center bg-gradient-to-r from-pink-300 to-indigo-900">
+  <div class="bg-white w-full max-w-md p-8 rounded-lg shadow-lg">
+   <div class="flex items-center mb-6">
+    <span class="mr-2 text-3xl">
+     点
+    </span>
+    <span class="text-xl font-bold">
+     Tedian
+    </span>
+   </div>
+   <h1 class="text-3xl font-bold mb-2">
+    Вход
+   </h1>
+   <p class="mb-6">
+    Нет аккаунта?
+    <a class="text-blue-500" href="#">
+     Регистрация
+    </a>
+   </p>
+   <form id="form">
+    <div class="mb-4">
+     <label class="block text-sm font-medium text-gray-700" for="username">
+      Логин
+     </label>
+     <input class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" id="username" type="text"/>
+    </div>
+    <div class="mb-6">
+     <label class="block text-sm font-medium text-gray-700" for="password">
+      Пароль
+     </label>
+     <input class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" id="password" type="password"/>
+    </div>
+    <button class="mt-4 w-full py-2 px-4 bg-purple-700 text-white font-semibold rounded-md shadow-md hover:bg-purple-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500" type="submit">
+     <a href="http://localhost:8000/example/user_ac">Войти</a>
+    </button>
+   </form>
+  </div>
+ </body>
+</html>
